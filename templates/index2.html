@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video detect</title>
+</head>
+<body>
+    <h1>Real-time Webcam Feed</h1>
+    <img id="kp" alt="Webcam Feed" height="640" width="640" >
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script type="text/javascript">
+        var socket=io.connect('https://'+document.domain+':'+location.port);
+        socket.on('frame',function(data){
+            var img=document.getElementById("kp");
+            img.scr='data:image/jpeg;base64,'+btoa(String.fromCharCode.apply(null, new UnitBArray(data.image)));
+        });
+    </script>
+</body>
+</html>

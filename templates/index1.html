@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-time Webcam Feed</title>
+</head>
+<body>
+    <h1>Real-time Webcam Feed</h1>
+    <img src="{{ url_for('video_feed') }}" alt="Webcam Feed" height="640" width="640" >
+    {%for i in range(x)%}
+    <form action="/helpme" method="post">
+        <div class="form-group">
+          <label for="username">{{i}}:</label>
+          <input type="text" class="form-control" name="{{i}}" id="username" placeholder="Enter username">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">get {{i}}</button>
+      </form>
+      {%endfor%}
+</body>
+</html>

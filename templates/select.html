@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1>Total images are {{x}}</h1>
+    {%for i in range(x)%}
+    <form action="/twowheeler" method="post">
+        <div class="form-group">
+          <label for="username">{{i}}:</label>
+          <input type="text" class="form-control" name="{{i}}" id="username" placeholder="Enter username">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">get {{i}}</button>
+      </form>
+      <image src=""></image>
+      {%endfor%}
+</body>
+</html>

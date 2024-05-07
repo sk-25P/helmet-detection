@@ -1,0 +1,14 @@
+names:
+- emergency
+- two_wheeler
+- z_null
+nc: 3
+roboflow:
+  license: CC BY 4.0
+  project: helmet_detection-zvqkp
+  url: https://universe.roboflow.com/naluguru/helmet_detection-zvqkp/dataset/1
+  version: 1
+  workspace: naluguru
+test: datasets/Helmet_Detection-1/test
+train: datasets/Helmet_Detection-1/train
+val: datasets/Helmet_Detection-1/valid

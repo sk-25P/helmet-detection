@@ -1,0 +1,14 @@
+names:
+- With_helmet
+- Without_helmet
+- 'null'
+nc: 3
+roboflow:
+  license: CC BY 4.0
+  project: model-2-swioz
+  url: https://universe.roboflow.com/roshan-ali-vogrc/model-2-swioz/dataset/1
+  version: 1
+  workspace: roshan-ali-vogrc
+test: datasets/Model-2--1/test
+train: datasets/Model-2--1/train
+val: datasets/Model-2--1/valid
